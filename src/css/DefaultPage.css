@@ -1,0 +1,199 @@
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir.eot");
+  src: url("./../fonts/Vazir.eot") format("embedded-opentype"), url("./../fonts/Vazir.woff2") format("woff2"), url("./../fonts/Vazir.woff") format("woff"), url("./../fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Bold.eot");
+  src: url("./../fonts/Vazir-Bold.eot") format("embedded-opentype"), url("./../fonts/Vazir-Bold.woff2") format("woff2"), url("./../fonts/Vazir-Bold.woff") format("woff"), url("./../fonts/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Black.eot");
+  src: url("./../fonts/Vazir-Black.eot") format("embedded-opentype"), url("./../fonts/Vazir-Black.woff2") format("woff2"), url("./../fonts/Vazir-Black.woff") format("woff"), url("./../fonts/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Medium.eot");
+  src: url("./../fonts/Vazir-Medium.eot") format("embedded-opentype"), url("./../fonts/Vazir-Medium.woff2") format("woff2"), url("./../fonts/Vazir-Medium.woff") format("woff"), url("./../fonts/Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Light.eot");
+  src: url("./../fonts/Vazir-Light.eot") format("embedded-opentype"), url("./../fonts/Vazir-Light.woff2") format("woff2"), url("./../fonts/Vazir-Light.woff") format("woff"), url("./../fonts/Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("./../fonts/Vazir-Thin.eot");
+  src: url("./../fonts/Vazir-Thin.eot") format("embedded-opentype"), url("./../fonts/Vazir-Thin.woff2") format("woff2"), url("./../fonts/Vazir-Thin.woff") format("woff"), url("./../fonts/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  direction: rtl;
+  font-size: 100%;
+  font-family: Vazir;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0;
+}
+
+div.window {
+  width: 100%;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+div.window div.parent-content {
+  padding: auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: max-content;
+  margin-top: 2rem;
+}
+
+div.window div.parent-content div.row {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.window div.parent-content div.row div#boxForBazargan {
+  padding: 0;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.window div.parent-content div.row div#boxForBazargan div.row {
+  width: 95%;
+}
+
+div.window div.parent-content div.row div#boxForBazargan div.row div {
+  text-align: right;
+  width: 100%;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+div.window div.parent-content div.row div#boxForBazargan div.row div div.databox.databox-shadowed {
+  border: 1px solid #dadada;
+  height: 85px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.window div.parent-content div.row div#boxForBazargan div.row div div.databox.databox-shadowed a.managInvoice {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-decoration: none;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #ffffff;
+}
+
+div.window div.parent-content div.row div#boxForBazargan div.row div div.databox.databox-shadowed a.managInvoice i {
+  font-size: 2.5rem;
+}
+
+div.window div.parent-content div.row div#boxForBazargan div.row div div.databox.databox-shadowed div.databox-left {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 80%;
+  position: relative;
+  background-color: #ffffff;
+}
+
+div.window div.parent-content div.row div#boxForBazargan div.row div div.databox.databox-shadowed div.databox-left span.databox-number {
+  margin: 0 1rem .5rem 0;
+}
+
+div.window div.parent-content div.row div#boxForBazargan div.row div div.databox.databox-shadowed div.databox-left span.databox-text {
+  margin-right: 1rem;
+}
+
+div.window div.parent-content div.row div#boxForBazargan div.row div div.databox.databox-shadowed div.databox-left div.databox-state {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 24px;
+  width: 24px;
+}
+
+div.window div.parent-content div.row div#alertBoxForSupport {
+  padding: 0;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.window div.parent-content div.row div#alertBoxForSupport div.well {
+  border: 0;
+  border-right: 5px solid #001d4a;
+  border-radius: 2px;
+  background-clip: padding-box;
+  background-color: #fbfbfb;
+  color: #000000;
+  position: relative;
+  width: 93%;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+div.window div.parent-content div.row div#alertBoxForSupport div.well p {
+  font-size: 85%;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: right;
+  line-height: 1.5rem;
+}
+
+div.window div.parent-content div.row div#alertBoxForSupport div.well p strong.fa.fa-circle {
+  height: 100%;
+  color: #001d4a;
+  margin: 0 .5rem;
+  display: flex;
+  align-items: flex-start;
+}
+/*# sourceMappingURL=DefaultPage.css.map */

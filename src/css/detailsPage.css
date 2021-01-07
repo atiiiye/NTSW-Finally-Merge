@@ -1,0 +1,150 @@
+.details-page {
+    border: 1px solid #eee;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.details-page-tab {
+    padding: 1rem !important;
+
+}
+
+.details-page-title {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-page-title-color {
+    color: #22A026;
+}
+
+.title-details {
+    background-color: #062d66;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: auto;
+}
+
+.idea-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.4s;
+    background-color: #008B8B !important;
+
+}
+
+.react-tabs {
+    margin-bottom: 1rem;
+}
+
+.idea-submit-btn:hover {
+    color: #fff !important;
+    transition: background-color 0.7s ease-out;
+    background-color: #ca2221 !important;
+    /* transition: box-shadow .45s;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.idea-submit-btn span:hover {
+    color: #fff;
+}
+
+.details-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.pagination-status {
+    display: flex;
+}
+
+.order-page-register {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-shadow: -1px 0 10px 1px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+.order-page-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    margin-top: 1rem;
+}
+
+.pagination-status__item button:first-child {
+    content: "قبلی";
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #315492;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.pagination-status li:last-child {
+    content: "بعدی";
+}
+
+.order-page-option {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-page-option select {
+    border-radius: 4px;
+    height: 36px;
+    width: 130px;
+}
+
+.order-page-search input {
+    border-radius: 5px;
+    border: 1px solid #777;
+    height: 38px;
+}
+
+.hPEdlB input {
+    padding: 6px !important;
+    border: none;
+    border: 1px solid #777;
+}
+
+.order-page-register .order-page-register-add .select-option-img {
+    padding: 5px;
+}
+
+.details-tabs{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width : 750px) {
+    .details-page-title {
+        flex-direction: column;
+
+    }
+
+    .order-page-register {
+        flex-direction: column;
+    }
+
+    .details-page-tab {
+        border: 1px solid red;
+        width: 100%;
+    }
+}

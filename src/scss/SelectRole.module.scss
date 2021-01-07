@@ -1,0 +1,80 @@
+@import 'base';
+
+.contents {
+    width: 100%;
+    height: 450px;
+    @include flex-box-column();
+    justify-content: space-around;
+
+    .descriptionBox {
+        @include flex-box-column();
+        text-align: center;
+        width: 75%;
+
+        h3 {
+            width: 100%;
+            margin-bottom: 2.5rem;
+            margin-top: .5rem;
+        }
+
+        span {
+            // width: 100%;
+            line-height: 1.7rem;
+            text-align: right;
+            color: $color-light-5;
+            font-size: 90%;
+        }
+    }
+
+    form {
+        width: 75%;
+        @include flex-box-column();
+
+        .button {
+            width: 250px;
+            font-size: 100%;
+            background-color: $color-blue-dark-6 !important;
+            color: $color-white;
+            border: none;
+
+            &:focus,
+            &:active {
+                box-shadow: 0 0 0 .2rem rgba($color: $color-blue-dark-6, $alpha: .5) !important;
+                border: none !important;
+            }
+        }
+    }
+
+    .HomeLink {
+        font-size: 90%;
+        background-color: $color-light-4 !important;
+        border: none;
+        text-decoration: none !important;
+        color: $color-white;
+        padding: .5rem;
+        border-radius: 4px;
+        width: 200px;
+        margin-top: 3rem;
+        @include flex-box-default;
+
+        &:hover {
+            color: $color-black ;
+        }
+
+        &:focus,
+        &:active {
+            box-shadow: 0 0 0 .2rem rgba($color: $color-light-4, $alpha: .5) !important;
+            border: none !important;
+            text-decoration: none;
+            color: $color-black ;
+        }
+
+        i {
+            padding: 0 .2rem;
+            font-size: 20px;
+        }
+
+    }
+}
+
+@import './medias/_mediaSelectRole.module.scss';

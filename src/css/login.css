@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Vazir;
+    src: url('./../fonts/Vazir.eot');
+    src: url('./../fonts/Vazir.eot') format('embedded-opentype'),
+        url('./../fonts/Vazir.woff2') format('woff2'),
+        url('./../fonts/Vazir.woff') format('woff'),
+        url('./../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    direction: rtl;
+    font-size: 100%;
+    font-family: vazir !important;
+    text-align: right !important;
+    font-size: 1rem !important;
+}
+
+.login {
+    padding: 4rem;
+    box-shadow: 0 0 6px #315492;
+    border-radius: 5px;
+    width: 500px;
+    position: relative;
+    margin: 5% auto;
+    direction: rtl;
+    text-align: right;
+    background-color: #fff;
+
+}
+.login label {
+    color: #000;
+    font-weight: bold;
+}
+
+.login input {
+    border: 1px solid #ddd;
+    direction: ltr;
+    color: #062d66;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+}
+
+.login button {
+    background-color: #315492;
+
+    /* color: #fff; */
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.login button:hover {
+    border: 1px solid #315492;
+     box-shadow: 0 0 6px #eee;
+    color: #fff;
+
+}
+
+.login .reset-password a {
+    color: #062d66;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login .reset-password a:hover {
+    text-decoration: none;
+    color: #315492;
+}
+
+.login-captcha {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reload_href {
+    visibility: hidden;
+}
+
+#reload_href::after {
+    visibility: visible;
+    content: "\267B";
+    /* background-image: url('./img/reload.svg'); */
+    position: absolute;
+    color: #315492;
+    top: 0;
+    left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#canv {
+    border-radius: 5px;
+    text-align: center;
+}
+
+#show-password {
+    position: relative;
+}
+
+#show-password-icon {
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+    .login {
+        width: 85%;
+        margin: 10% auto;
+        padding: 0.8rem;
+    }
+}
